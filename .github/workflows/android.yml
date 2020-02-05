@@ -13,4 +13,4 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Gradle
-      run: bash sudo ./gradlew build
+      run: sudo ./gradlew build
