@@ -3,8 +3,12 @@ name: Android CI
 on: [push]
 
 jobs:
+  permission:
+    name: Set gradlew with executable permission
+    runs-on: [ubuntu-latest]
+    steps:
+      - run: chmod +x gradlew
   build:
-
     runs-on: ubuntu-latest
 
     steps:
