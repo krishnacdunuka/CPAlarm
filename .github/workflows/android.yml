@@ -8,6 +8,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: List contents
+      run: ls
     - name: change permission
       run: chmod +x gradlew
     - name: set up JDK 1.8
